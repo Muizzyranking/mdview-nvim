@@ -6,7 +6,7 @@ local TITLE = "mdview"
 -- Directory of this file, found from its own source path so it does not depend on
 -- runtimepath. The leading "@" that debug.getinfo adds is stripped.
 M.dir = vim.fs.dirname(debug.getinfo(1, "S").source:sub(2))
-M.assets = vim.fs.normalize(M.dir .. "/../assets")
+M.assets = vim.fs.normalize(M.dir .. "/../../assets")
 
 M.notify = {}
 
